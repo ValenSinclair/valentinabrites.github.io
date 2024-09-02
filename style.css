@@ -66,9 +66,13 @@ div.img {
   z-index: 20;
 }
 
-@media (width < 1000px) {
+@media (width <= 1024px) and (orientation: portrait) {
+  div.portada {
+    margin-bottom: 0px;
+  }
   div.img {
     justify-content: center;
+    height: calc(100vh - 305px);
   }
   #imagenPrincipal {
     margin-top: 0px;
@@ -79,7 +83,7 @@ div.img {
 
 .descripcion {
   text-align: center;
-  width: 650px;
+  width: 630px;
   margin: auto;
 }
 .container2 {
@@ -123,6 +127,45 @@ footer img {
 
 footer img:hover {
   filter: opacity(60%);
+}
+
+@media (width < 650px) {
+  div.portada > p {
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  div.descripcion > p {
+    font-size: 18px;
+  }
+
+  p#titulo {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  div.img {
+    height: calc(100vh - 205px);
+  }
+  .descripcion {
+    width: auto;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  .galeria {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+
+  .galeria > img {
+    height: 90vw;
+    width: 90vw;
+  }
 }
 /* .contenidoPrincipal {
   position: relative;
