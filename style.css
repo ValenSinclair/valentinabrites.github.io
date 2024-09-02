@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Century Gothic Bold";
+  src: url(fonts/centurygothic_bold.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Century Gothic Regular";
+  src: url(fonts/centurygothic.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  display: grid;
+  width: 100%;
+  height: calc(100vh - 16px);
+  grid-template-columns: 1fr 1.5fr;
+  background-color: #f3efe3;
+}
+
+h1,
+p {
+  font-family: "Century Gothic Bold";
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+div.portada {
+  align-content: end;
+  margin-bottom: 50px;
+}
+
+div.portada > p {
+  margin-left: 30px;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+div.descripcion > p {
+  font-size: 22px;
+}
+
+p#titulo {
+  font-size: 80px;
+  margin-bottom: 40px;
+}
+
+div.img {
+  overflow: hidden;
+  position: relative;
+}
+
+#imagenPrincipal {
+  height: 160vh;
+  position: absolute;
+  top: -30vh;
+  right: -4vw;
+  z-index: 20;
+}
+
+.descripcion {
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+}
+
+.galeria {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.galeria > img {
+  height: 30vw;
+  width: 30vw;
+  background: white;
+  object-fit: cover;
+}
+
+#dibujo1 {
+  object-position: -1vw -8vw;
+}
+
+#dibujo3 {
+  object-position: 0 -16vw;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: #f3efe3;
+}
+footer img {
+  height: 120px;
+  margin: 5px;
+}
+
+footer img:hover {
+  filter: opacity(60%);
+}
+/* .contenidoPrincipal {
+  position: relative;
+} */
+.box div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(img/pescadito.png);
+  z-index: 10;
+}
+
+.box div:nth-child(1) {
+  top: 15%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2) {
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3) {
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(4) {
+  top: 20%;
+  left: 60%;
+  animation: animate 12s linear infinite;
+}
+.box div:nth-child(5) {
+  top: 55%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(6) {
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+.box div:nth-child(7) {
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+.box div:nth-child(8) {
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9) {
+  top: 90%;
+  left: 32%;
+  animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(10) {
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.3) translateY(-90px) rotate(360deg);
+    opacity: 0;
+  }
+}
+ body{
+  background:
+  radial-gradient(27% 29% at right, #0000 83%,rgba(227, 227, 232, 0.38) 85% 99%,#0000 101%) calc(29px/2) 29px,
+  radial-gradient(27% 29% at left, #0000 83%,rgba(227, 227, 232, 0.38) 85% 99%,#0000 101%) calc(29px/-2) 29px,
+  radial-gradient(29% 27% at top, #0000 83%,rgba(227, 227, 232, 0.38) 85% 99%,#0000 101%) 0 calc(29px/2),
+  radial-gradient(29% 27% at bottom, #0000 83%,rgba(227, 227, 232, 0.38) 85% 99%,#0000 101%) 0 calc(29px/-2)
+  #ffffff;
+background-size: 58px 58px;
+
+
+ }
